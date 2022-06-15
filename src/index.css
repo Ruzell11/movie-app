@@ -1,13 +1,79 @@
-body {
+:root{
+  --font-color:whitesmoke;
+  --nav-color:#121212;
+  --bg-searchContain:#262626;
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body{
+  background-color: black;
+  color: whitesmoke;
+}
+.myNavStyle{
+  background-color: var(--nav-color);
+  color: var(--font-color);
+  width: 100% !important;
+}
+.brand{
+  font-family: 'Courier New', Courier, monospace;  
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.search-button-container{
+  top: 28px;
+  right: 16px;
+ background-color:var(--bg-searchContain);
+
+}
+.searchbtn{
+  cursor: pointer;
+  color: var(--font-color);
+}
+.searchtxt{
+  outline: none;
+  font-size: 1rem;
+  background-color: var(--bg-searchContain);
+  border: none;
+  color: var(--font-color);
+  transition: .4s;
+  width: 0;
+ 
+}
+.search-button-container:hover .searchtxt{
+  width: 10rem;
+}
+.movie{
+  width: 300px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+@media only screen and (max-width: 971px) {
+  .movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+ 
+  }
+  .movie img{
+    width: 70% !important;
+  }
 }
