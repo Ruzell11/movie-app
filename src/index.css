@@ -11,6 +11,9 @@ body{
   background-color: black;
   color: whitesmoke;
 }
+h1{
+  color: whitesmoke !important;
+}
 .myNavStyle{
   background-color: var(--nav-color);
   color: var(--font-color);

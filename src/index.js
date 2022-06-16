@@ -7,14 +7,20 @@ import ContentBody from './Component/contentBody.js'
 import style from './index.css'
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
+import HomePage from './Component/homepage.js';
+
 
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 root.render(
 
-<StrictMode>
-<Content />
-</StrictMode>
+<>
 
+
+
+
+<Content />
+<HomePage  />
+</>
  )
